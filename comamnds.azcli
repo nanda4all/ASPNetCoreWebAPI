@@ -1,0 +1,8 @@
+dotnet new --list
+dotnet new -l
+dotnet new sln -n Core
+dotnet new webapi -n webapi1
+dotnet sln webapi1.sln add webapi1/webapi1.csproj
+dotnet build
+cd webapi1
+dotnet run
